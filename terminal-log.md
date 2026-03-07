@@ -1,0 +1,4 @@
+pwd
+mkdir
+cd ..
+cd ~/
