@@ -37,9 +37,9 @@ iyf-s10-week-01-kmwota-hub/<br>
 
 ## What I Learned
 
-Creating a project structure using terminal commands.<br>
-Creating scripts to automate common tasks.<br>
-Creating and using branches in terminals.
+- Creating a project structure using terminal commands.<br>
+- Creating scripts to automate common tasks.<br>
+- Creating and using branches in terminals.
 
 ## Future Improvements
 
