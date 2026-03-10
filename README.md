@@ -24,21 +24,21 @@ GitHub Tools and Workflow
 
 ## Project Structure
 
-\`\`\`
-iyf-s10-week-01-kmwota-hub/
-├── index.html
-├── about.html
-├── projects.html
-├── contact.html
+\`\`\`<br>
+iyf-s10-week-01-kmwota-hub/<br>
+├── index.html<br>
+├── about.html<br>
+├── projects.html<br>
+├── contact.html<br>
 ├── css/
-│   └── styles.css
-└── images/
+│   └── styles.css<br>
+└── images/<br>
 \`\`\`
 
 ## What I Learned
 
-Creating a project structure using terminal commands.
-Creating scripts to automate common tasks.
+Creating a project structure using terminal commands.<br>
+Creating scripts to automate common tasks.<br>
 Creating and using branches in terminals.
 
 ## Future Improvements
@@ -49,7 +49,7 @@ Creating and using branches in terminals.
 
 ## Contact
 
-- Email: your@email.com
+- Email: kmwota@gmail.com
 - LinkedIn: [Mwotsam](https://linkedin.com/in/yourprofile)
 - GitHub: [@kmwota-hub](https://github.com/kmwota-hub)
 
