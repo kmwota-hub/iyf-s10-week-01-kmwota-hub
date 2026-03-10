@@ -7,7 +7,8 @@ GitHub Tools and Workflow
 
 ## Screenshot
 
-![Project Screenshot](./images/screenshot.png)
+![Project Screenshot](./images/<img width="1338" height="632" alt="image" src="https://github.com/user-attachments/assets/46f4b888-7b29-4d71-8274-b730908cd8c6" />.png
+)
 
 ## Features
 
