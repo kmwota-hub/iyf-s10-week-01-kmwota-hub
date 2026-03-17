@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model Practice</title>
+    <style>
+        .demo-box {
+            background-color: lightblue;
+            padding: 20px;
+            border: 5px solid navy;
+            width: 200px;
+            margin: 10px;
+        }
+        .broken-box {
+            padding: 20px;
+            width: 300px;
+            border: 1px solid gray;
+            margin: 20px;
+            box-sizing: border-box;
+            background: peachpuff;
+
+        }
+        .card-h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .card button {
+            padding: 10px 15px;
+            background: navy;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Box Model Practice</h1>
+    </header>
+    <main>
+        <h2>Box Model Visulization</h2>
+        <div class="demo-box">Content Area</div>
+        <div class="demo-box">Content Area</div>
+        <div class="demo-box">Content Area</div>
+        <div class="demo-box">Content Area</div>
+       <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Card Image">
+       </div><img src="" alt="">
+
+        <h2 class="card-h2">Debugged Layout</h2>
+        <div class="broken-box">A box of 300px wide</div>
+        <div class="card">
+            <p>
+                This is a simple card component demonstrating the CSS box model.
+                <br>The spacing is controlled using padding, margins, and borders.
+             </p>
+             <button>Learn More</button>
+        </div>
+    </main>
+</body>
+</html>
