@@ -88,3 +88,76 @@ p {
 small {
     font-size: var(--text-sm);
 }
+:root {
+    /* Core Colors */
+    --color-primary: #4F46E5;
+    --color-secondary: #F59E0B;
+    --color-background: #F9FAFB;
+    --color-text: #111827;
+    --color-muted: #6B7280;
+
+    /* Variations */
+    --color-primary-light: #6366F1;
+    --color-primary-dark: #4338CA;
+}
+h1, h2, h3 {
+    color: var(--color-primary-dark);
+}
+p {
+    color: var(--color-text);
+}
+
+small, .muted {
+    color: var(--color-muted);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: #1F2937;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #D97706;
+}
+.bg-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #1F2937;
+}
+
+.bg-muted {
+    background-color: var(--color-muted);
+    color: white;
+}
