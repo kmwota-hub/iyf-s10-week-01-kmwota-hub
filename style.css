@@ -161,3 +161,59 @@ a:hover {
     background-color: var(--color-muted);
     color: white;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f5f5f5;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* spacing between links */
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.card-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #e8e8e8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: 200px; /* equal height */
+}
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.col {
+  flex: 1;
+  min-width: 200px;
+}
+
+copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
