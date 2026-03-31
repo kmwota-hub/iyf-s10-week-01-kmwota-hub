@@ -14,13 +14,23 @@
         .broken-box {
             padding: 20px;
             width: 300px;
+            border: 1px solid rgb(1, 0, 0);
+            margin: 20px;
+            box-sizing: border-box;
+            background: rgb(188, 109, 165);
+
+        }
+        
+        .card {
+            padding: 20px;
+            width: 300px;
             border: 1px solid gray;
             margin: 20px;
             box-sizing: border-box;
             background: peachpuff;
 
         }
-        .card-h2 {
+        .card h2 {
             margin-bottom: 15px;
             font-size: 20px;
         }
@@ -48,13 +58,12 @@
         <div class="demo-box">Content Area</div>
         <div class="demo-box">Content Area</div>
         <div class="demo-box">Content Area</div>
-       <div class="card">
-        <img src="https://via.placeholder.com/300x150" alt="Card Image">
-       </div><img src="" alt="">
-
-        <h2 class="card-h2">Debugged Layout</h2>
+        
+        <h2>Debugged Layout</h2>
         <div class="broken-box">A box of 300px wide</div>
         <div class="card">
+            <h2>Box Model Card</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Card Image">
             <p>
                 This is a simple card component demonstrating the CSS box model.
                 <br>The spacing is controlled using padding, margins, and borders.
