@@ -219,3 +219,11 @@ a:hover {
 .sidebar { grid-area: sidebar; }
 .main { grid-area: main; }
 .footer { grid-area: footer; }
+
+.button {
+    transition: all 0.3s ease;
+}
+a:focus, button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
