@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,10 +13,6 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-    }
-
-    h1, h2 {
-      color: #333;
     }
 
     section {
@@ -46,47 +44,69 @@
     .timeline-item p {
       margin: 5px 0 0;
     }
+    h4 {
+      color: #0011ff;
+    }
   </style>
 </head>
+
 <body>
-  <h1>About Me</h1>
+  <header>
+    <h1>Shadrack Mwota</h1>
+  </header>
+  <main>
 
-  <!-- Background Section -->
-  <section>
-    <h2>Background</h2>
-    <p>
-      I am a passionate web development learner, currently building projects with HTML, CSS, and JavaScript.
-      My focus is on creating accessible, responsive websites and improving my coding workflow through hands-on practice.
-    </p>
-  </section>
+    <nav class="navbar">
+      <div class="logo">MyLogo</div>
 
-  <!-- Skills Section -->
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5 & Semantic Markup</li>
-      <li>CSS (Responsive Layouts, Flexbox, Grid)</li>
-      <li>JavaScript Fundamentals (DOM, Arrays, Functions)</li>
-      <li>Git & GitHub Workflow</li>
-      <li>VS Code & PowerShell for Development</li>
-      <li>Troubleshooting Workflow</li>
-    </ul>
-  </section>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Education Timeline Section -->
-  <section>
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2026 — Web Development Training</h3>
-        <p>Structured assignments in HTML, CSS, JavaScript, and GitHub Pages deployment.</p>
-        <p>Built small projects like a Student Grade Tracker and practiced troubleshooting workflows.</p>
+    <h2>About Me</h2>
+
+    <!-- Background Section -->
+    <section>
+      <h3>Background</h3>
+      <p>
+        I am a passionate web development learner, currently building projects with HTML, CSS, and JavaScript.
+        My focus is on creating accessible, responsive websites and improving my coding workflow through hands-on
+        practice.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5 & Semantic Markup</li>
+        <li>CSS (Responsive Layouts, Flexbox, Grid)</li>
+        <li>JavaScript Fundamentals (DOM, Arrays, Functions)</li>
+        <li>Git & GitHub Workflow</li>
+        <li>VS Code & PowerShell for Development</li>
+        <li>Troubleshooting Workflow</li>
+      </ul>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section>
+      <h3>Education</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>2026 — Web Development Training</h4>
+          <p>Structured assignments in HTML, CSS, JavaScript, and GitHub Pages deployment.</p>
+          <p>Built small projects like a Student Grade Tracker and practiced troubleshooting workflows.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2025 — Programming Fundamentals</h4>
+          <p>Hands-on practice with coding basics, semantic HTML, and accessibility best practices.</p>
+        </div>
       </div>
-      <div class="timeline-item">
-        <h3>2025 — Programming Fundamentals</h3>
-        <p>Hands-on practice with coding basics, semantic HTML, and accessibility best practices.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 </body>
+
 </html>
