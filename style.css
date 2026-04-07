@@ -233,3 +233,51 @@ a:focus, button:focus {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
+/* Base styles (mobile first) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu-toggle {
+  display: none; /* hide checkbox */
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f9f9f9;
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Show menu when checkbox is checked */
+.menu-toggle:checked ~ .nav-links {
+  display: flex;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* hide hamburger */
+  }
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2rem;
+    background: none;
+    padding: 0;
+  }
+}
