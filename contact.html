@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,7 +20,7 @@
       background: #fff;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     fieldset {
@@ -41,7 +42,10 @@
       color: #333;
     }
 
-    input, select, textarea, button {
+    input,
+    select,
+    textarea,
+    button {
       width: 100%;
       padding: 10px;
       margin-bottom: 15px;
@@ -50,10 +54,12 @@
       font-size: 14px;
     }
 
-    input:focus, select:focus, textarea:focus {
+    input:focus,
+    select:focus,
+    textarea:focus {
       border-color: #007BFF;
       outline: none;
-      box-shadow: 0 0 4px rgba(0,123,255,0.4);
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
     }
 
     textarea {
@@ -82,70 +88,155 @@
     }
   </style>
 </head>
+
 <body>
-      <header>
-        <h1>Shadrack Mwota</h1>
-    </header>
-    <main>
+  <header>
+    <h1>Shadrack Mwota</h1>
+  </header>
+  <main>
 
-        <nav class="navbar">
-            <div class="logo">MyLogo</div>
-                   <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-       <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <nav class="navbar">
+      <div class="logo">MyLogo</div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
 
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-  <h2>Contact Me</h2>
-  
-  <form action="#" method="post">
-    <fieldset>
-      <legend>Personal Information</legend>
-      
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-      <br><br>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-      <br><br>
-      
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Optional phone number">
-    </fieldset>
-    
-    <fieldset>
-      <legend>Message Details</legend>
-      
-      <label for="subject">Subject:</label>
-      <select id="subject" name="subject" required>
-        <option value="">--Select a subject--</option>
-        <option value="general">General Inquiry</option>
-        <option value="support">Support Request</option>
-        <option value="feedback">Feedback</option>
-      </select>
-      <br><br>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Write your message here..." minlength="50" required></textarea>
-    </fieldset>
-    
-    <fieldset>
-      <legend>Preferences</legend>
-      
-      <!-- Newsletter Subscription -->
-      <label for="newsletter">
-        <input type="checkbox" id="newsletter" name="newsletter">
-        Subscribe to our newsletter
-      </label>
-    </fieldset>
-    
-    <button type="submit">Submit</button>
-  </form>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind or just want to say hi? Feel free to reach out.</p>
+
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+          <p id="formStatus"></p>
+        </form>
+
+        <div class="contact-info">
+          <p>Email: <a href="mailto:mwotsam@email.com">mwotsam@email.com</a></p>
+          <p>Location: Nairobi, Kenya</p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      #contact {
+        padding: 60px 20px;
+        color: #3306fa;
+        text-align: center;
+      }
+
+      .contact-container {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #000000;
+      }
+
+      form {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        color: #000000;
+        font-size: 14px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: #e7e8eb;
+        color: #000000;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1px solid #38bdf8;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #38bdf8;
+        border: none;
+        border-radius: 5px;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #0ea5e9;
+      }
+
+      #formStatus {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #94a3b8;
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const status = document.getElementById("formStatus");
+        status.textContent = "Sending...";
+
+        setTimeout(() => {
+          status.textContent = "Thanks! Your message has been sent.";
+          this.reset();
+        }, 1500);
+      });
+    </script>
 </body>
+
 </html>
